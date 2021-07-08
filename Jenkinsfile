@@ -1,13 +1,13 @@
 pipeline {
   agent any
   stages {
-    stage('install') {
+    stage('Install') {
       steps {
         echo 'Good'
       }
     }
 
-    stage('build') {
+    stage('Build') {
       parallel {
         stage('build') {
           steps {
@@ -24,15 +24,35 @@ pipeline {
       }
     }
 
-    stage('run') {
-      steps {
-        echo 'running'
+    stage('Run') {
+      parallel {
+        stage('Run') {
+          steps {
+            echo 'running'
+            timestamps()
+          }
+        }
+
+        stage('Startup') {
+          steps {
+            echo 'startup'
+          }
+        }
+
       }
     }
 
-    stage('test') {
+    stage('Test') {
       steps {
         echo 'test'
+      }
+    }
+
+    stage('Mail') {
+      steps {
+        mail(subject: 'Test', body: 'hello')
+        sh 'ls -l'
+        echo 'send mail'
       }
     }
 
