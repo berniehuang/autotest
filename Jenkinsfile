@@ -49,10 +49,21 @@ pipeline {
     }
 
     stage('Mail') {
-      steps {
-        mail(subject: 'Test', body: 'hello')
-        sh 'ls -l'
-        echo 'send mail'
+      parallel {
+        stage('Mail') {
+          steps {
+            mail(subject: 'Test', body: 'hello')
+            sh 'ls -l'
+            echo 'send mail'
+          }
+        }
+
+        stage('upload') {
+          steps {
+            echo 'upload data'
+          }
+        }
+
       }
     }
 
