@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.foo.test"
+      android:sharedUserId="android.uid.system">
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+        android:targetPackage="com.example.foo.test"
+        android:label="Tests for com.example.foo" />
+</manifest>

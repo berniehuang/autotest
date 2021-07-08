@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--configuration description="Runs Tests for foo test">
+    <target_preparer class="com.android.tradefed.targetprep.InstallBuildEnvApkSetup">
+        <option name="apk-name" value="FooTest.apk" />
+    </target_preparer>
+     <option name="test-suite-tag" value="iapct" />
+      <option name="test-tag" value="FooTest" />	
+    <test class="com.android.tradefed.testtype.CodeCoverageTest" >
+        <option name="package" value="com.example.foo.test" />
+        <option name="runner" value="android.support.test.runner.AndroidJUnitRunner" />
+        <option name="metadata-file"
+         value="out/target/common/obj/APPS/FooTest_intermediates/coverage.em" />
+        <option name="source-dir" value="external/foo/src" />
+    </test>
+</configuration-->
+
+
+
+
+<configuration description="Runs Tests for foo test">
+    <target_preparer class="com.android.tradefed.targetprep.InstallBuildEnvApkSetup">
+        <option name="apk-name" value="FooTest.apk" />
+    </target_preparer>
+     <option name="test-suite-tag" value="iapct" />
+      <option name="test-tag" value="FooTest" />	
+    <test class="com.android.tradefed.testtype.AndroidJUnitTest" >
+        <option name="package" value="com.android.frameworks.utiltests" />
+        <option name="runner" value="android.support.test.runner.AndroidJUnitRunner" />
+    </test>
+</configuration>
+
+
