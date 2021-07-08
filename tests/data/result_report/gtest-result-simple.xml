@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="19700101090024.000000" name="Alltests">
+  <testsuite name="Test_Sample" tests="1" failures="0" disabled="0" errors="0" time="0.02">
+    <testcase name="case_demo" status="run" time="0.01" classname="Test_Sample">
+    </testcase>
+  </testsuite>
+</testsuites>

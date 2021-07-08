@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="6" disabled="0" errors="0" time="19700101090024.000000" name="Alltests">
+  <testsuite name="Test_Sample_Algorithm" tests="1" failures="1" disabled="0" errors="0" time="0.048">
+    <testcase name="Factorial_Negative" status="run" time="0.036" classname="Test_Sample_Algorithm">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:7&#x0A;Value of: Factorial(-5)&#x0A;  Actual: 1&#x0A;Expected: 2" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:7
+Value of: Factorial(-5)
+  Actual: 1
+Expected: 2]]></failure>
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:8&#x0A;Value of: Factorial(-100)&#x0A;  Actual: 1&#x0A;Expected: 2" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:8
+Value of: Factorial(-100)
+  Actual: 1
+Expected: 2]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Test_Sample" tests="4" failures="3" disabled="0" errors="0" time="0.033">
+    <testcase name="Factorial_Zero" status="run" time="0.003" classname="Test_Sample">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:15&#x0A;Value of: Factorial(0)&#x0A;  Actual: 1&#x0A;Expected: -1" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:15
+Value of: Factorial(0)
+  Actual: 1
+Expected: -1]]></failure>
+    </testcase>
+    <testcase name="Factorial_Positive" status="run" time="0.004" classname="Test_Sample">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:23&#x0A;Value of: Factorial(4)&#x0A;  Actual: 24&#x0A;Expected: 100" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:23
+Value of: Factorial(4)
+  Actual: 24
+Expected: 100]]></failure>
+    </testcase>
+    <testcase name="IsPrime_Negative" status="run" time="0.003" classname="Test_Sample">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:30&#x0A;Value of: IsPrime(-1)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Algorithm.cpp:30
+Value of: IsPrime(-1)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="IsPrime_Trivial" status="run" time="0.001" classname="Test_Sample" />
+  </testsuite>
+  <testsuite name="Test_Sample_Math" tests="5" failures="2" disabled="0" errors="0" time="0.039">
+    <testcase name="add_Succeed" status="run" time="0.013" classname="Test_Sample_Math" />
+    <testcase name="add_Failed" status="run" time="0.003" classname="Test_Sample_Math">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Math.cpp:30&#x0A;Value of: _p_a-&gt;getA()&#x0A;  Actual: 6&#x0A;Expected: 7" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Math.cpp:30
+Value of: _p_a->getA()
+  Actual: 6
+Expected: 7]]></failure>
+    </testcase>
+    <testcase name="dec_Succeed" status="run" time="0.001" classname="Test_Sample_Math" />
+    <testcase name="dec_Failed" status="run" time="0.006" classname="Test_Sample_Math">
+      <failure message="build/core/templates/sample/googletest/tests/Test_Sample_Math.cpp:44&#x0A;Value of: _p_a-&gt;getA()&#x0A;  Actual: 1&#x0A;Expected: 0" type=""><![CDATA[build/core/templates/sample/googletest/tests/Test_Sample_Math.cpp:44
+Value of: _p_a->getA()
+  Actual: 1
+Expected: 0]]></failure>
+    </testcase>
+    <testcase name="check_private_data" status="run" time="0.009" classname="Test_Sample_Math" />
+  </testsuite>
+</testsuites>

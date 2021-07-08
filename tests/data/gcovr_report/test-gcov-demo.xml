@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage
+  SYSTEM 'http://cobertura.sourceforge.net/xml/coverage-03.dtd'>
+<coverage branches-covered="10" branch-rate="1.0" branches-valid="10"
+ lines-covered="29" line-rate="1.0" lines-valid="29" timestamp="1551348156"
+ version="gcovr 3.2">
+ <sources>
+  <source>build/core/templates/sample</source>
+ </sources>
+ <packages>
+  <package branch-rate="1.0" complexity="0.0" line-rate="1.0"
+   name="googletest.src">
+   <classes>
+    <class branch-rate="1.0" complexity="0.0"
+     filename="googletest/src/Sample_Algorithm.cpp" line-rate="1.0"
+     name="Sample_Algorithm_cpp">
+     <methods/>
+     <lines>
+      <line branch="false" hits="7" number="4"/>
+      <line branch="false" hits="7" number="6"/>
+      <line branch="true" condition-coverage="100% (2/2)" hits="21"
+       number="7">
+       <conditions>
+        <condition coverage="100%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="false" hits="14" number="8"/>
+      <line branch="false" hits="7" number="9"/>
+      <line branch="false" hits="7" number="12"/>
+      <line branch="true" condition-coverage="100% (2/2)" hits="7"
+       number="14">
+       <conditions>
+        <condition coverage="100%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="true" condition-coverage="100% (2/2)" hits="4"
+       number="16">
+       <conditions>
+        <condition coverage="100%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="false" hits="1" number="17"/>
+      <line branch="false" hits="1" number="19"/>
+      <line branch="true" condition-coverage="100% (2/2)" hits="4"
+       number="21">
+       <conditions>
+        <condition coverage="100%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="true" condition-coverage="100% (2/2)" hits="2"
+       number="23">
+       <conditions>
+        <condition coverage="100%" number="0" type="jump"/>
+       </conditions>
+      </line>
+     </lines>
+    </class>
+    <class branch-rate="0.0" complexity="0.0"
+     filename="googletest/src/Sample_Math.cpp" line-rate="1.0"
+     name="Sample_Math_cpp">
+     <methods/>
+     <lines>
+      <line branch="false" hits="3" number="32"/>
+      <line branch="false" hits="1" number="33"/>
+      <line branch="false" hits="2" number="34"/>
+      <line branch="false" hits="3" number="6"/>
+      <line branch="false" hits="3" number="8"/>
+      <line branch="false" hits="3" number="9"/>
+      <line branch="false" hits="6" number="11"/>
+      <line branch="false" hits="6" number="13"/>
+      <line branch="false" hits="1" number="15"/>
+      <line branch="false" hits="1" number="17"/>
+      <line branch="false" hits="1" number="18"/>
+      <line branch="false" hits="4" number="20"/>
+      <line branch="false" hits="4" number="22"/>
+      <line branch="false" hits="1" number="25"/>
+      <line branch="false" hits="1" number="27"/>
+      <line branch="false" hits="1" number="28"/>
+      <line branch="false" hits="1" number="30"/>
+     </lines>
+    </class>
+   </classes>
+  </package>
+ </packages>
+</coverage>
+
