@@ -1,0 +1,8 @@
+<manifest>
+  <project groups="core" name="development" owner="iAuto_CI" path="development" />
+  <project groups="core" module="-" name="board/common" owner="iAuto_CI" path="board/common" />
+  <project groups="core" module="OSS" name="framework/navi/core" owner="iAuto_CI" path="framework/service/navi/src/core" />
+  <project groups="core" name="build" owner="iAuto_CI" path="build">
+    <copyfile dest="Makefile" src="core/root.mk" />
+  </project>
+</manifest>

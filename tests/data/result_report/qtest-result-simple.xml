@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase name="TestQString">
+<Environment>
+    <QtVersion>5.2.1</QtVersion>
+    <QTestVersion>5.2.1</QTestVersion>
+</Environment>
+<TestFunction name="initTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+<TestFunction name="cleanupTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+</TestCase>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+  <remote fetch="ssh://igerrit.storm:29418/Src/14Model/JA158" name="origin" review="igerrit.storm" alias="origin" />
+  <remote fetch="ssh://igerrit.storm:29418/Src/16Model/JA168" name="JA168" review="igerrit.storm" alias="origin" />
+  <remote fetch="ssh://igerrit.storm:29418/Src/18Model/JA188" name="JA188" review="igerrit.storm" alias="origin" />
+  <default remote="origin" revision="master" sync-j="4" />
+  <include name="_default.xml" />
+</manifest>
