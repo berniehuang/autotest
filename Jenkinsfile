@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('build') {
-      steps {
-        echo 'Hello World'
+      parallel {
+        stage('build') {
+          steps {
+            echo 'Hello World'
+          }
+        }
+
+        stage('deploy') {
+          steps {
+            echo 'deploy'
+          }
+        }
+
       }
     }
 
