@@ -1,0 +1,21 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  myformat1:
+    class: logging.Formatter
+    format: "[%(levelname)s] %(filename)s line:%(lineno)d %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: myformat1
+  rotatefile:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: myformat1
+    filename: unittest.log
+    maxBytes: 200000
+    backupCount: 3
+root:
+  handlers: [console, rotatefile]
+  level: DEBUG
