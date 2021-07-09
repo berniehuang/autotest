@@ -1,12 +1,12 @@
 pipeline {
   agent any
-  environment {
-    BUILD_EXPRESSION = false
-  }
   stages {
     stage('Install') {
       when {
-         expression { BUILD_EXPRESSION }
+        expression {
+          BUILD_EXPRESSION
+        }
+
       }
       steps {
         echo 'Good'
@@ -18,12 +18,21 @@ pipeline {
         stage('build') {
           steps {
             echo 'Hello World'
+            sh 'ls -l'
           }
         }
 
         stage('deploy') {
           steps {
             echo 'deploy'
+            sh 'pwd'
+          }
+        }
+
+        stage('compile') {
+          steps {
+            echo 'compile'
+            sh 'echo $PATH'
           }
         }
 
@@ -62,5 +71,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    BUILD_EXPRESSION = false
   }
 }
