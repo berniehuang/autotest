@@ -1,7 +1,13 @@
 pipeline {
   agent any
+  environment {
+    BUILD_EXPRESSION = true
+  }
   stages {
     stage('Install') {
+      when {
+         expression { BUILD_EXPRESSION }
+      }
       steps {
         echo 'Good'
       }
