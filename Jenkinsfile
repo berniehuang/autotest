@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    BUILD_EXPRESSION = true
+    BUILD_EXPRESSION = false
   }
   stages {
     stage('Install') {
