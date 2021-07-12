@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  triggers{
+        upstream(upstreamProjects: 'test_pipeline', threshold: hudson.model.Result.SUCCESS)
+  }
+  
   stages {
     stage('Install') {
       when {
