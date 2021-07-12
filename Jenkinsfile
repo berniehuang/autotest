@@ -1,7 +1,18 @@
 pipeline {
   agent any
-  triggers{
-        upstream(upstreamProjects: 'test_pipeline', threshold: hudson.model.Result.SUCCESS)
+  triggers {
+    gerrit(
+      serverName: 'gerrit.office.iauto.com',
+      gerritProjects: [[
+        compareType: 'PLAIN',
+        pattern: 'All-Users',
+        branches: [[ compareType: 'PLAIN', pattern: 'master' ]]
+      ]],
+      triggerOnEvents: [
+        changeMerged(),
+        patchsetCreated(excludeDrafts: false, excludeNoCodeChange: false, excludeTrivialRebase: false)
+      ]
+    )
   }
   
   stages {
